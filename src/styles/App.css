@@ -1,12 +1,81 @@
-h1 {
-    color: #27aedb;
-    text-align: center;
-    }
-    
+*{
+    padding:0;
+    margin:0;
+    box-sizing :border-box;
+    background-color: #F1F5F8;
+}
 
-button{
-    color: #27aedb;
+ul{
+    display:flex;
+    list-style-type:none;
+    justify-content: space-evenly;    
+
+}
+
+img{
+    border:1px solid brown;
+}
+h1{
     text-align: center;
-    justify-content: center;
-    align-items: center;
+
+}
+
+.imageTextMainBlock{
+background-color:#F1F5F8;
+display: flex;
+flex-wrap:wrap;
+height:100vh;
+width:98vw;
+gap:20px;
+overflow:auto;
+/* margin-top:20px ; */
+justify-content: center;
+}
+
+
+.imageTextMainBlock::-webkit-scrollbar {
+    width: 0px;    
+    background-color: #2385d6;
+  }
+  .imageTextMainBlock::-webkit-scrollbar-thumb {
+    height: 0px;
+    background-color: rgb(12, 222, 152);
+  }
+  
+h2{
+display:inline-block;
+width:220px   ;
+/* background-color:brown; */
+}
+
+.boxMainBlock{
+width:40%;
+background-color:azure;
+height:150px;
+display:flex;
+justify-content: space-around;
+/* border: 1px solid red  ; */
+box-sizing: border-box;
+margin-top:20px;
+}
+
+.boxBlock{
+    display:flex;
+
+}
+
+
+.price{
+    margin-top:5px;
+    margin-left:150px;
+    color: brown;
+}
+
+.tile{
+    color:brown;
+}
+hr{
+    width:99%;
+    color:brown;
+    margin-left:5px;
 }
