@@ -44,16 +44,16 @@ const App = () => {
    
   return (
 
-    <div id="main">
+    <div id="main" c="a">
     <nav>
         <h1>
             Our Menu
         </h1>
         <ul>
-       <li onClick = {category} id = "all" className = "tile"> All</li>
-       <li onClick = {category} id= "filter-btn-1" className = "tile"> Breakfast</li>
-       <li onClick=  {category} id="filter-btn-2" className = "tile"> Lunch</li>
-       <li onClick= {category} id= "filter-btn-3" className = "tile"> Shakes</li>
+       <li onClick = {category} id = "all" className = "tile" > All</li>
+       <li onClick = {category} id= "filter-btn-1" className = "tile" data-test-id="menu-item-breakfast"> Breakfast</li>
+       <li onClick=  {category} id="filter-btn-2" className = "tile" data-test-id="menu-item-lunch"> Lunch</li>
+       <li onClick= {category} id= "filter-btn-3" className = "tile" data-test-id="menu-item-shakes"> Shakes</li>
         </ul>
     </nav>   
 
