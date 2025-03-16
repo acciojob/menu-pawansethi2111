@@ -21,20 +21,20 @@ const App = () => {
       }
 
 
-      if(id=="breakfast"){
-        let filterdata = Menu.filter((data)=>{return data.category==id})
+      if(id=="filter-btn-1"){
+        let filterdata = Menu.filter((data)=>{return data.category=="breakfast"})
         
         setCategory(filterdata);
       }
 
-      if(id=="lunch"){
-        let filterdata = Menu.filter((data)=>{return data.category==id})
+      if(id=="filter-btn-2"){
+        let filterdata = Menu.filter((data)=>{return data.category=="lunch"})
         
         setCategory(filterdata);
       }
 
-      if(id=="shakes"){
-        let filterdata = Menu.filter((data)=>{return data.category==id})
+      if(id=="filter-btn-3"){
+        let filterdata = Menu.filter((data)=>{return data.category=="shakes"})
         
         setCategory(filterdata);
       }
@@ -44,16 +44,16 @@ const App = () => {
    
   return (
 
-    <div>
+    <div id="main">
     <nav>
         <h1>
             Our Menu
         </h1>
         <ul>
        <li onClick = {category} id = "all" className = "tile"> All</li>
-       <li onClick = {category} id= "breakfast" className = "tile"> Breakfast</li>
-       <li onClick=  {category} id="lunch" className = "tile"> Lunch</li>
-       <li onClick= {category} id= "shakes" className = "tile"> Shakes</li>
+       <li onClick = {category} id= "filter-btn-1" className = "tile"> Breakfast</li>
+       <li onClick=  {category} id="filter-btn-2" className = "tile"> Lunch</li>
+       <li onClick= {category} id= "filter-btn-3" className = "tile"> Shakes</li>
         </ul>
     </nav>   
 
